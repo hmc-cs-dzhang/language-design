@@ -17,11 +17,31 @@ For each quote, describe what it was about the quote that led you pick it.
 
 **Response**
 
-"According to findings by researchers... (Pavlus article)"
-	Quote literally contradicts itself.  It is because you're a n00b.
-	You spend more time after the first hour you've learned it than the first hour
-	More NL looking could be more intuitive, but once you're familiar with what should be a small syntax set then it becomes more cumbersome to type out NL and you would appreciate concision.
-	The study gave nothing to refute that.
+1. From the article by Pavlus:
+
+>"According to findings by researchers from Southern Illinois University, this reaction isn’t just because you’re a n00b: they found that Perl, a major programming language used by untold zillions of developers, is no more intuitive to novices than a language with a randomly generated syntax." [Pavlus, 2012].
+
+We selected this quote as an example of something we disagree with.  Most
+notably, the quote contradicts itself.  The quote first says that if you
+have trouble intuiting code then it's not becuase you're a n00b.  However,
+they go on to reference a studying that tested people who have never coded
+before.  This quote does not support their point that experienced coders
+struggle with syntax.
+
+I also disagree with the sentiment that syntax should necessarily be more
+intuitive to "novices".  Sure, using natural language could look more
+understandable for someone who has never coded before.  However, for
+more experienced coders, using natural language could feel ambiguous and
+cumbersome.  Frequent users of a code would appreciate a small syntax
+that they could build off of and a concise set of keywords.  Also, I think
+it is more important to cater to experienced coders than the "n00bs" in the
+study because they were only novices for an hour.  Typically, people spend
+more time as experienced coders who understand the syntax than as beginners
+trying to read off the code like a natural language.  There is certainly
+a use for intuitive languages that read more like natural language for
+teaching purposes.  However, once a student has learned how to code, he/she
+will probably grow tired of writing less concise code.
+
 
 "While those on the outside are still... (Yang and Rabkin)"
 	Cycle of privilidge.
