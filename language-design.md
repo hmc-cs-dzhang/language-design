@@ -108,7 +108,7 @@ According to Steele, the size of the language is one important indicator. As he
 demonstrates by restricting himself to one-syllable primitive words, using a
 language that is too small can be cumbersome. However, if a designer is too
 ambitious with the size of the language, then it may be too slow to develop.
-The danger of a large language, to Steel, is that "in a race, a small language
+The danger of a large language, to Steele, is that "in a race, a small language
 with warts will beat a well designed language because users will not wait for
 the right thing" (Steele 6). So a small language is not good enough, but large
 well-thought-out languages tend to fail. Steele's solution is to design a small
@@ -122,8 +122,8 @@ service of this goal -- to allow growth. To name a few, a language set up to
 grow should have generic types (Steele 10), operator overloading (10), and
 (perhaps most importantly) the ability to add new words to the vocabulary of
 the language in such a way that the new words look and act like primitive words
-(6). By way of example, languages as diverse as Haskell, Lisp, and C++ satisfy
-these criteria.
+(6). For example, languages as diverse as Haskell, Lisp, and C++ satisfy these
+criteria.
 
 While Steele gives us one useful criterion for evaluating languages, we can see
 a slightly different approach in Joshua Bloch's "How to Design a Good API and
