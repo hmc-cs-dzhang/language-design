@@ -98,26 +98,54 @@ you know a poorly designed language? What are the symptoms?
 
 **Response**
 
-Good language:
+Guy Steele gives us several traits of a good language in "Growing a Language".
+According to Steele, the size of the language is one important indicator. As he
+demonstrates by restricting himself to one-syllable primitive words, using a
+language that is too small can be cumbersome. However, if a designer is too
+ambitious with the size of the language, then it may be too slow to develop.
+The danger of a large language, to Steel, is that "in a race, a small language
+with warts will beat a well designed language because users will not wait for
+the right thing" (Steele 6). So a small language is not good enough, but large
+well-thought-out languages tend to fail. Steele's solution is to design a small
+language that can easily grow. Importantly, it must be able to grow in such a
+way that the users can contribute to the growth -- languages designed by one
+person or by a committee tend to grow more slowly, and to alienate original
+users as they grow.
 
-User-defined things act like primitive ones
-A good language is one that is easily extendable.  Starts small. Allows users to grow the language.
-Principle of least astonishment.  Vocabulary should be intuitive.
-Easy things should be easy
-Conduct a study.
-Fails early and loudly.
+All of the more specific language characteristics mentioned by Steele are in
+service of this goal -- to allow growth. To name a few, a language set up to
+grow should have generic types (Steele 10), operator overloading (10), and
+(perhaps most importantly) the ability to add new words to the vocabulary of the
+language in such a way that the new words look and act like primitive words (6).
+By way of example, languages as diverse as Haskell, Lisp, and C++ satisfy these
+criteria.
 
-Bad language:
+While Steele gives us one useful criterion for evaluating languages, we can see
+a slightly different approach in Joshua Bloch's "How to Design a Good API and
+Why it Matters". (Note that while Bloch's talk pertains specifically to APIs, we
+have seen that APIs and languages share many traits, such as vocabulary and
+fluency, so it stands to reason that many of the things that make an API good
+might also make a language good). Bloch gives us many tips for how to make an
+API that is user-friendly, not just in terms of growth, but also as it exists
+right now. The most generally applicable is probably the "principle of least
+astonishment" (Bloch 506). This necessary, though probably not sufficient,
+condition for a language to be good, can be stated as follows:
 
-Examples of poorly designed languages, R and Perl.
-Astonishing
-Will let you do things that you shouldn't do
-Inextensible
-R: Easy things not easy, like equality testing for integers
-One way to tell a language is designed poorly is to conduct a study.
+>  Every method [or feature, in the case of a language] should do the least
+>  surprising thing it could, given its name.
+>  [Bloch, 2006]
 
-
-
+So what is a bad language? We believe the easiest definition of a bad language
+is any language that is not good, as we now have a good idea of what makes a
+language good. To end with an example, we agree with Tim Smith that R is a bad
+language, evidenced by the content and tone of Smith's "aRrgh: a newcomer’s
+(angry) guide to R". R violates the principle of least astonishment in many
+ways. Take, for example, the dot operator -- in fact, this is not an operator at
+all, but simply a valid character to include in a variable name, which makes for
+very astonishing names. As Bloch says, "names matter" (Bloch 506). Another
+unfortunate trait of R, one not yet mentioned here, is its tendency to fail
+silently or late. A good language should "fail fast" (506), and R definitely
+does not.
 
 ---
 
