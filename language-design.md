@@ -359,16 +359,68 @@ you do so? If not, why not?
 
 **Response**
 
-"natural-language replacements for some of the more abstruse syntax" seems to be
-talking more about replacing the vocab, whereas AppleScript was more about
-replacing the grammar to make it easier to read.  More about choosing good names
-for things. I would include some aspects of natural language but only so far.
-From Zen of Python, "there should be one, and preferably only one obvious way to
-do it".  If you make it too similar to natural language then there would seem to
-be more than one way. Vocab should come from natural language, but grammar needs
-to be more precise. Small vocabulary set so that you can keep track and learn
-relevant things. Even then we question is NL would make as much of a difference
-once someone has put in the effort learn the syntax.
+For the most part, these two experiences of natural languages are not at odds
+with each other.  We interpereted "natural-language replacements for some of
+the more abstruse syntax" to refer more to the vocabulary of a language (for
+example, using `REPEAT` instead of `FOR`).  The grammar would still be intact,
+and the readers would still easily recognize the text as a programming language.
+The following is an example of Quorum, the language which was found to be more
+intuitive than Perl:
+```
+number x = 175.3
+text y = "false"
+if x > 100 then
+    y = "true"
+    end
+else then
+    y = "still false"
+    end
+```
+
+This block certainly resembles code that we are familiar with, but some of the
+syntax like braces and parentheses replaced with words.  On the other hand, here
+is a snippet of AppleScript (from The Ultimate Beginner's Guide To
+AppleScript, Josh Johnson, 2012):
+
+```
+[applescript]
+set theFirstNumber to 3
+set theSecondNumber to 2
+set theAnswer to (theFirstNumber + theSecondNumber)
+
+set theString to "3+2+1="
+tell application "Finder"
+display dialog theString & theAnswer
+end tell
+[/applescript]
+```
+This code shows that AppleScript went further than replacing vocabulary and
+syntax--they tried to have the language's grammar mimic natural language.  As
+you can see, Quorum's use of `=` suggests the intent but is clearly a machine
+instruction.  On the other hand, `set x to y` changes the grammar to something
+confusingly close to natural language, raising the issues that Tim Cook found.
+
+Some downsides of AppleScript's approach are that their extensive use of English
+suggest that the language supports other natural language features as well.  For
+example, in English, there are often many different, and equally correct, ways
+of saying the same thing.  However, this quality would not be desirable for a
+programming language--according to the Zen of Python, "there should be one, and
+preferably only one obvious way to do it".
+
+For these reasons, I would more closely follow Quorum's model of
+incorporating natural language into the vocabulary but not the grammar.  That
+way, readers could get an idea of what the vocabulary intended, but would not be
+in the mindset of writing ambiguous natural language. In addition, I would
+include only a small set of vocabulary so that the user could easily keep
+track of all the keywords.  Also, I would view concision as an important factor
+for determining a language's vocabulary.  A coder is only a novice for a short
+time, and once they are comfortable with a language's word set then the English
+meaning is less important.  The word `REPEAT` might be slightly more evocative
+than the word `for` but after a few minutes, they would be synonymous. 
+Moreover, if I were writing thousands of lines of code, I would rather type
+`for` to save the time and space.  In conclusion, a limited use of natural
+language certainly has its value in creating readable code, but too much natural
+languages sacrifices brevity and precision.
 
 
 ---
@@ -380,14 +432,16 @@ Briefly describe how you split up the work for this assignment.
 **Response**
 
 We individually read the articles, and then we pair-programmed the outline.
+We divided up the questions as follows:
 
 - [x] Question 1: Daniel, Jeb, Daniel
 - [x] Question 2: Jeb
 - [x] Question 3: Daniel
 - [x] Question 4: Jeb
-- [ ] Question 5: Daniel
+- [x] Question 5: Daniel
 - [x] Question 6: Jeb
-- [ ] Question 7: Daniel
+- [x] Question 7: Daniel
 
-
+We then read over the answers to the questions together to make sure we agreed
+on everything.
 ---
