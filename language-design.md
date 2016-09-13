@@ -199,25 +199,47 @@ they would have no way of creating a primitive method that looked like one from
 the API.  As Steele shows, this rigidness could dissuade programmers from
 using our API, and suggests that we should have used a different approach.
 ---
- 
+
 **Question**
 
-
-In what way is an API a language? 
+In what way is an API a language?
 
 **Response**
 
-Language - semantics, vocabulary + grammar
-API - semantics, vocabulary
-"If you get an API right, code will read like prose": fluency
+In class, we talked about the specturm of DSL-ness, which included, in order
+from least to most "DSL-y", libraries, APIs, and DSLs. Just from that, it should
+be clear that the distinction between APIs and languages is fuzzy -- that's the
+whole point of a spectrum.
 
-Good characteristics of languages are good characteristics of APIS
-	- principle of least astonishment
-	- extensible
-	- start small (when in doubt leave it out, steele)
-	- collaboration/open source
-	- easy to evolve/pivot
-	- fail fast
+This fuzziness is also evident in the similarities between the definitions of an
+API and a language. In particular, we defined a language as having fluency
+(vocabulary and grammar) and semantics. An API certainly has semantics. It also
+has some sense of fluency -- per Bloch, "if you get an API right, code will read
+like prose" (Bloch 506).
+
+As we alluded to in an earlier response, a similiarity between APIs and
+languages is what makes one good. We can get a sense of the similarities by
+comparing Steele's traits of a good language with Bloch's traits of a good API.
+For example, Steele makes a big point of how "a main goal in designing a
+language should be to plan for growth" (Steele 7). In a similar vein, Bloch
+advises API designers: "When in doubt, leave it out.... You can always add
+things later, but you can’t take them away" (Bloch 506).
+
+As another example, a good language, like a good API, should be a collaborative
+endeavor. Steele describes the bazaar/cathedral metaphor, and suggests that a
+language should be built like a bazaar -- the many users of the language all
+play a small part in building the final product -- since "it is fine to come
+up with good thoughts, but much better to know them when you see them in the
+work of other persons" (Steele 8). Bloch seems to agree, writing
+
+> API design is not a solitary activity. Show your design to as many people as
+> you can, and take their feedback seriously. Possibilities that elude your
+> imagination may be clear to others (Bloch 506).
+
+To summarize, languages and APIs are adjacent on the DSL spectrum, and they
+share similar definitions. Thus it is no surprise that good API is in many ways
+similar to a good language.
+
 ---
 
 **Question**
@@ -309,7 +331,7 @@ We individually read the articles, and then we pair-programmed the outline.
 - [x] Question 1: Daniel, Jeb, Daniel
 - [x] Question 2: Jeb
 - [x] Question 3: Daniel
-- [ ] Question 4: Jeb
+- [x] Question 4: Jeb
 - [ ] Question 5: Daniel
 - [ ] Question 6: Jeb
 - [ ] Question 7: Daniel
