@@ -265,16 +265,48 @@ what ways do the themes apply to the study and creation of DSLs?
 
 **Response**
 
-A disadvantage of a DSL is that its difficult to hire people to convince them to
-work on your DSL (or maybe an advantage?) Stereotypes about specific DSLs (html)
-People look down on not Turing Complete DSLs because its harder to do certain
-nondomain specific tasks People might view using DSLs are cheating because it is
-easier to do things. More respect for back-end than front-end (analogous) Use of
-general programming language depends on your background/socioeconomic status, so
-perhaps the idea to create a DSL does too. Maybe people are biased against
-creating DSLs for the reasons above
+There are clearly stereotypes about certain DSLs. For example, Yang and Rabkin
+mention the tendency of back-end developers to look down on front-end
+programmers. They mention Javascript in this context. While Javascript is
+clearly a general purpose language, there are DSLs involved in web development
+that also contribute to the stereotypes. For example, HTML fits our definition
+of a DSL, and more generally a programming language. It has syntax and
+semantics, and it allows small building blocks to be chained and composed in
+ways that add to the expressiveness of the language. However, the internet is
+rife with articles claiming that HTML is not a programming language. For an
+example, see the top answer [here](http://stackoverflow.com/questions/145176/is-html-considered-a-programming-language).
 
+We believe that the disdain for HTML is but an example of a more general
+principle. Note that many of the comments on the StackOverflow answer linked
+above discuss Turing completeness. For example,
 
+> TeX is a Turing-complete language, so its classification as a programming
+> language or markup language is a bit blurry.
+
+> Apparently, HTML5+CSS3 is turing complete too.
+
+What's interesting here is not whether these langauges are Turing-complete, or
+if they are, well, languages. Rather, the interesting thing is that Turing-
+completenes is an issue of discussion at all. There seems to be a popular
+conception that Turing-completeness makes a programming language, and since we
+have seen that many DSLs are not Turing-complete, it seems reasonable to
+believe that programmers in general may be more wary of DSLs than they would be
+of general purpose languages.
+
+This could lead to the same kind of discrimination described in Yang and
+Rabkin's article, where engineers are kept "outside" the loop based on their
+familiarity with certain DSLs. It may, however, have the opposite affect: those
+who are prejudiced against DSLs may be unwilling to take a job in which they
+would be working with DSLs. This obviously presents problems for the hiring
+managers at such companies, but we propose that it might be a blessing in
+disguise, as people wont to judge on the basis of language are self-selected
+out of opportunities, and those with more open minds take their place.
+
+Unfortunately, this way of thinking presumes that there are plenty of DSLs to
+begin with. Mitigating this effect may be the fact that those who are in a
+position to create DSLs are likely to be the same ones who are biased against
+them. This could lead to suboptimal solutions to problems where a DSL could
+solve the problem more elegantly.
 
 ---
 
@@ -333,7 +365,7 @@ We individually read the articles, and then we pair-programmed the outline.
 - [x] Question 3: Daniel
 - [x] Question 4: Jeb
 - [ ] Question 5: Daniel
-- [ ] Question 6: Jeb
+- [x] Question 6: Jeb
 - [ ] Question 7: Daniel
 
 
