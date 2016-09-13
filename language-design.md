@@ -48,6 +48,7 @@ not intended for people with prior CS experience.  However, once a student has
 learned how to code, he or she will grow tired of the wordiness needed for
 natural language.
 
+2. From the article by Yang and Rabkin:
 
 > "While those on the outside are still struggling to prove themselves, the
 > technically privileged have gone ahead to determine what the software that
@@ -72,6 +73,8 @@ languages, which inform their prejudices about those who use the languages.
 They then utilize the language prejudice to keep the outsiders out and
 themselves in. Breaking this cycle of privilege will require a dramatic
 cultural shift.
+
+3. From the abstract by Bloch:
 
 > "You can't please everyone, so aim to displease everyone equally" [Bloch,
 2006]
