@@ -306,17 +306,13 @@ Briefly describe how you split up the work for this assignment.
 
 We individually read the articles, and then we pair-programmed the outline.
 
-Question 1:
-	First quote: Daniel
-	Second quote: Jeb
-	Thrid quote: Daniel
-
-Question 2: Jeb
-Question 3: Daniel
-Question 4: Jeb
-Question 5: Daniel
-Question 6: Jeb
-Question 7: Daniel
+- [x] Question 1: Daniel, Jeb, Daniel
+- [x] Question 2: Jeb
+- [x] Question 3: Daniel
+- [ ] Question 4: Jeb
+- [ ] Question 5: Daniel
+- [ ] Question 6: Jeb
+- [ ] Question 7: Daniel
 
 
 ---
