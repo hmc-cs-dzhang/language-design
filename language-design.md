@@ -32,19 +32,21 @@ they go on to reference a studying that tested people who have never coded
 before.  This quote does not support their point that experienced coders
 struggle with syntax.
 
-I also disagree with the sentiment that syntax should necessarily be more
-intuitive to "novices".  Sure, using natural language could look more
+We also disagree with the sentiment that programmers should employ syntax
+more intuitive to "novices".  Sure, using natural language could look more
 understandable for someone who has never coded before.  However, for
 more experienced coders, using natural language could feel ambiguous and
-cumbersome.  Frequent users of a code would appreciate a small syntax
-that they could build off of and a concise set of keywords.  Also, I think
+cumbersome.  Frequent users of code would appreciate a small syntax
+that they could build off of a concise set of keywords.  Also, I think
 it is more important to cater to experienced coders than the "n00bs" in the
 study because they were only novices for an hour.  Typically, people spend
 more time as experienced coders who understand the syntax than as beginners
-trying to read off the code like a natural language.  There is certainly
-a use for intuitive languages that read more like natural language for
-teaching purposes.  However, once a student has learned how to code, he/she
-will probably grow tired of writing less concise code.
+trying to read off code like a natural language.  There is certainly
+niche for langauges that resemble natural communication, for example a
+stepping stone to teach novices computer science or a domain-specific language
+not intended for people with prior CS experience.  However, once a student has
+learned how to code, he or she will grow tired of the wordiness needed for
+natural language.
 
 
 > "While those on the outside are still struggling to prove themselves, the
@@ -76,18 +78,19 @@ cultural shift.
 We chose this quote because it is an undesirable, yet important part of
 designing a language or an API.  In CS 5 and CS 60, all of our homework
 assignments were very small and self-contained, and they often had "perfect"
-solutions.  However, when I transitioned to working with a much larger code-base
-during an internship this summer, I soon found that the real world is very
+solutions.  However, when we transitioned to working with a much larger
+code-base
+during internships this summer, we found that the real world is very
 different from our ideal CS assignments.  There were many situations where
 deciding a variable name was ambiguous, or when a new feature broke existing
-contracts.  This quote reminds me that while you should definitely try to make
-your code as clear and intuitive as possible, it is not realistic to please
-everybody.
-	This issue was evident in the source article about grayscale [Verou, 2014]. 
-	All of the proposed names for the "graying" functions had their own drawbacks. 
-Their seemed to be well-thought arguments for any of the four options.  The
-designers of the language heeded the advice of not being able to please
-everybody, and sensibly decided to poll users.
+contracts.  This quote reminds us that while you should strive to make
+your code as clear as possible, it is not realistic to please everybody.
+
+This issue was evident in the source article about grayscale [Verou, 2014]. 
+All of the proposed names for the "graying" functions had their own drawbacks. 
+Commenters proposed  several well-thought arguments for all four options.
+This example shows that the designers could not please everybody, so they
+were attempting to choose the least surprising answer by polling users.
 
 ---
 
@@ -155,11 +158,11 @@ How do the themes of _Growing a Language_ relate to the "sound lab" we did this 
 
 **Response**
 
-My main takeaway from _Growing a Language_ was that a good language should
+Our main takeaway from _Growing a Language_ was that a good language should
 provide users with a small and useful set of building blocks.  From there, the
-progammer should be able to compose the available tools to suit their
-specific need. We tried to use this same mentatility when adapting the Sound
-library to be a more usable API.  First, we created a "Sound" class which
+progammer should be able to compose the available tools to suit their needs. We
+tried to use this mentatility when adapting the Sound
+library to a more usable API.  First, we created a "Sound" class which
 contained all of the methods for editing sounds.  We tried to be
 consistent--each method took in a Sound (self) along with other parameters and
 returned a new Sound.  This way, the user could easily compose functions using
@@ -174,28 +177,29 @@ language designers should not include these rare features because "It would not
 be fair to weigh down all programmers with the need to have or to learn all the
 words for all niche uses" (Steele, 12).  This idea ties with the theme of making
 a language/API exactly as small as it should be, and no smaller [Bloch, 2006]. 
-We tried to respect this mentality when designing our API for the sound lab. 
-All of the methods should perform a single task, which allows users to combine
+We tried to follow this maxim when designing our API for the sound lab. 
+All of the methods performed a single task, which allows users to combine
 functions effectively.  We tried to keep the methods as segmented as possible,
 including options like "play", "overlay," "reverse," and "change speed".  We did
 not, for example, add a method that would both overlay two sounds and
 reverse them, as this would not have been useful for most users.
 
-Another point that _Growing a Language_ emphasized was that users should be able
+Another idea that _Growing a Language_ emphasized was that users should be able
 to make their own functions that look like primitives of the language. 
 According to Steele, 
 > APL was designed by one man, a smart man—and I love APL—but it had a flaw that
 > I think has all but killed it: there was no way for a user to grow the
 > language in a smooth way (Steele, 6)
 
-This is a salient point that we failed to consider when desigining our Sound 
+In retrospect, we failed to consider this point when desigining our Sound 
 API.  Our design involved creating a Sound class with two data members, the 
 sound samples and the sampling rate.  Our goal was to keep these data members 
 private and only expose users to the class's methods.  (Bloch includes this 
 idea in his maxim "Minimize accessibility; when in doubt, make it private").  
 With this design, however, a user would not be able to extend the Sound 
 class.  They could compose the sound methods that we defined, but they would have no way of creating a primitive method that looked like one from the API.  As Steele shows, this rigidness could dissuade programmers from using our API, 
-and suggests that we should have used a different approach.
+which suggests that we should have used a different approach.
+
 ---
 
 **Question**
@@ -253,29 +257,28 @@ article first listed what seemed like an extensive list of pros and cons for the
 function names.  Other people then commented with additional suggestions that
 the authors perhaps hadn't considered.  For example, one of the comments
 suggested avoiding `black(lightness [, alpha])` because it involved a
-"subtractive model of printing".  This commenter provided valuable no insight on
+"subtractive model of printing".  This commenter provided valuable insight on
 an issue that was not previously mentioned in the article.
 
 Secondly, the article shows the different factors that coders consider when
 choosing a function's name.  First of all, coders should obey the Principle of
-Least Astonishment.  One of Bloch's maxims says that "Every method should do the
-least surprising thing it could, given its name" [Bloch, 2006].  The writers of
-the API are going at great length to provide the least astonishing name for
-their function by polling users to gauge their intuition.  They also considered
-whether small changes in behavior would require extensive changes in the code. 
+Least Astonishment: "Every method should do the least surprising thing it 
+could, given its name" [Bloch, 2006].  The writers of the API went at great
+lengths to provide the least astonishing name for their function by polling 
+users to gauge their intuition.  They also considered whether small changes in
+behavior would require extensive changes in the code.
 This provided encouragement for `rgb(x)`, since if you later wanted to change
 the color away from gray, you would only have to change the arguments rather
 than the function name.  Furthermore, readibility was a big concern for
 naming the grayscaling function.  Although `rgb(x)` may have its benefits, it
-is much less readable than, for example, `gray(x)`.  The pro/con lists and
-comments showed the relative importance of these issues when designing and API.
+is much less readable than, for example, `gray(x)`.
 
-Lastly, this article shows, as Bloch writes, "You can't please everyone so aim
-to displease everyone equally" [Bloch, 2006].  The comments show that many users
-had strong opinions about how to name the grayscaling function.  Therefore, many
-programmers will be unhappy no matter what name they choose.  It is impossible
-to please everybody in this instance, so the best the authors can do is to
-displease as few people as possible.
+Lastly, this article reveals, as Bloch writes, "You can't please everyone so 
+aim to displease everyone equally" [Bloch, 2006].  The comments show that many
+users had strong opinions about how to name the grayscaling function. 
+Therefore, many programmers will be displeased no matter what name was chosen. 
+It was impossible to satisfy everybody in this instance, so the best the 
+authors can do was to displease as few people as possible.
 
 ---
 
@@ -376,21 +379,24 @@ else then
     y = "still false"
     end
 ```
-
-This block certainly resembles code that we are familiar with, but some of the
-syntax like braces and parentheses replaced with words.  On the other hand, here
-is a snippet of AppleScript (from The Ultimate Beginner's Guide To
-AppleScript, Josh Johnson, 2012):
+[Stefik et al., 2011]
+This block resembles code that we are familiar with, but some of the braces and
+parentheses have been replaced with words.  On the other hand, here is a
+snippet of AppleScript (from The Ultimate Beginner's Guide To AppleScript,
+Josh Johnson, 2012):
 
 ```
 [applescript]
-set theFirstNumber to 3
-set theSecondNumber to 2
-set theAnswer to (theFirstNumber + theSecondNumber)
+tell application "Mail"
 
-set theString to "3+2+1="
-tell application "Finder"
-display dialog theString & theAnswer
+set theMessage to make new outgoing message with properties
+{subject:theSubject, content:theContent, visible:true}
+
+tell theMessage
+make new to recipient with properties {name:recipientName,
+address:recipientAddress}
+send
+
 end tell
 [/applescript]
 ```
@@ -404,15 +410,15 @@ Some downsides of AppleScript's approach are that their extensive use of English
 suggest that the language supports other natural language features as well.  For
 example, in English, there are often many different, and equally correct, ways
 of saying the same thing.  However, this quality would not be desirable for a
-programming language--according to the Zen of Python, "there should be one, and
+programming language: according to the Zen of Python, "there should be one, and
 preferably only one obvious way to do it".
 
-For these reasons, I would more closely follow Quorum's model of
+For these reasons, we would more closely follow Quorum's model of
 incorporating natural language into the vocabulary but not the grammar.  That
 way, readers could get an idea of what the vocabulary intended, but would not be
-in the mindset of writing ambiguous natural language. In addition, I would
+in the mindset of writing ambiguous natural language. In addition, we would
 include only a small set of vocabulary so that the user could easily keep
-track of all the keywords.  Also, I would view concision as an important factor
+track of all the keywords.  Also, we would view concision as an important factor
 for determining a language's vocabulary.  A coder is only a novice for a short
 time, and once they are comfortable with a language's word set then the English
 meaning is less important.  The word `REPEAT` might be slightly more evocative
