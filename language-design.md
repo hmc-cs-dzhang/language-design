@@ -70,11 +70,24 @@ They then utilize the language prejudice to keep the outsiders out and
 themselves in. Breaking this cycle of privilege will require a dramatic
 cultural shift.
 
-"You can't please everyone, so aim to displease everyone equally"
-	In the real world there is not always a perfect solution like in CS5
-	There are always tradeoffs
-	This was evident in the grayscale article
+> "You can't please everyone, so aim to displease everyone equally" [Bloch,
+2006]
 
+We chose this quote because it is an undesirable, yet important part of
+designing a language or an API.  In CS 5 and CS 60, all of our homework
+assignments were very small and self-contained, and they often had "perfect"
+solutions.  However, when I transitioned to working with a much larger code-base
+during an internship this summer, I soon found that the real world is very
+different from our ideal CS assignments.  There were many situations where
+deciding a variable name was ambiguous, or when a new feature broke existing
+contracts.  This quote reminds me that while you should definitely try to make
+your code as clear and intuitive as possible, it is not realistic to please
+everybody.
+	This issue was evident in the source article about grayscale [Verou, 2014]. 
+	All of the proposed names for the "graying" functions had their own drawbacks. 
+Their seemed to be well-thought arguments for any of the four options.  The
+designers of the language heeded the advice of not being able to please
+everybody, and sensibly decided to poll users.
 
 ---
 
