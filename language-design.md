@@ -92,12 +92,15 @@ How do the themes of _Growing a Language_ relate to the "sound lab" we did this 
 
 **Response**
 
-We made it easier to compose things, and create complicated sounds out of the building blocks.  Made it easier for the user to do complex things.
-All the functions were simple, basic, primitive building blocks.  Then the user could do what they wanted.  Made connections easier.  Better room for growth by making connections more intuitive
-Connect to building blocks
-We didn't add to the rules of the sound lab.  We just modified the existing ones.
-We didn't include complex functions that would only be useful to a select few.
-Not possible for users to add to the API and make it look like a primitive. (pg 6)  Cannot extend the sound class. (Keep APIs free of implementation details).
+We made it easier to compose things, and create complicated sounds out of the
+building blocks.  Made it easier for the user to do complex things. All the
+functions were simple, basic, primitive building blocks.  Then the user could do
+what they wanted.  Made connections easier.  Better room for growth by making
+connections more intuitive Connect to building blocks We didn't add to the rules
+of the sound lab.  We just modified the existing ones. We didn't include complex
+functions that would only be useful to a select few. Not possible for users to
+add to the API and make it look like a primitive. (pg 6)  Cannot extend the
+sound class. (Keep APIs free of implementation details).
 
 
 
@@ -129,14 +132,13 @@ What does the post on grayscale tell us about the process of API design?
 
 **Response**
 
-Example of open source/collaborating with users
-"If it's hard to find good names go back to the drawing board" -- is CSS a bad language???
-Sometimes every alternative will have drawbacks
-	You can't please everyone ... displease everyone equally
-Expect API design mistakes, see article
-Principle of least astonishment (see comments)
-Readability is an important consideration for names
-Would a small change in program behavior require a lot of name changes in the code? (extensibility/evolvability)
+Example of open source/collaborating with users "If it's hard to find good names
+go back to the drawing board" -- is CSS a bad language??? Sometimes every
+alternative will have drawbacks You can't please everyone ... displease everyone
+equally Expect API design mistakes, see article Principle of least astonishment
+(see comments) Readability is an important consideration for names Would a small
+change in program behavior require a lot of name changes in the code?
+(extensibility/evolvability)
 
 ---
 
@@ -147,13 +149,14 @@ what ways do the themes apply to the study and creation of DSLs?
 
 **Response**
 
-A disadvantage of a DSL is that its difficult to hire people to convince them to work on your DSL (or maybe an advantage?)
-Stereotypes about specific DSLs (html)
-People look down on not Turing Complete DSLs because its harder to do certain nondomain specific tasks
-People might view using DSLs are cheating because it is easier to do things.
-More respect for back-end than front-end (analogous)
-Use of general programming language depends on your background/socioeconomic status, so perhaps the idea to create a DSL does too.
-Maybe people are biased against creating DSLs for the reasons above
+A disadvantage of a DSL is that its difficult to hire people to convince them to
+work on your DSL (or maybe an advantage?) Stereotypes about specific DSLs (html)
+People look down on not Turing Complete DSLs because its harder to do certain
+nondomain specific tasks People might view using DSLs are cheating because it is
+easier to do things. More respect for back-end than front-end (analogous) Use of
+general programming language depends on your background/socioeconomic status, so
+perhaps the idea to create a DSL does too. Maybe people are biased against
+creating DSLs for the reasons above
 
 
 
@@ -187,12 +190,16 @@ you do so? If not, why not?
 
 **Response**
 
-"natural-language replacements for some of the more abstruse syntax" seems to be talking more about replacing the vocab, whereas AppleScript was more about replacing the grammar to make it easier to read.  More about choosing good names for things.
-I would include some aspects of natural language but only so far.
-From Zen of Python, "there should be one, and preferably only one obvious way to do it".  If you make it too similar to natural language then there would seem to be more than one way.
-Vocab should come from natural language, but grammar needs to be more precise.
-Small vocabulary set so that you can keep track and learn relevant things.
-Even then we question is NL would make as much of a difference once someone has put in the effort learn the syntax.
+"natural-language replacements for some of the more abstruse syntax" seems to be
+talking more about replacing the vocab, whereas AppleScript was more about
+replacing the grammar to make it easier to read.  More about choosing good names
+for things. I would include some aspects of natural language but only so far.
+From Zen of Python, "there should be one, and preferably only one obvious way to
+do it".  If you make it too similar to natural language then there would seem to
+be more than one way. Vocab should come from natural language, but grammar needs
+to be more precise. Small vocabulary set so that you can keep track and learn
+relevant things. Even then we question is NL would make as much of a difference
+once someone has put in the effort learn the syntax.
 
 
 ---
