@@ -315,12 +315,12 @@ above discuss Turing completeness. For example,
 > Apparently, HTML5+CSS3 is turing complete too.
 
 What's interesting here is not whether these langauges are Turing-complete, or
-if they are, well, languages. Rather, the interesting thing is that
-Turing-completenes is an issue of discussion at all. There seems to be a popular
+if they are, well, languages. Rather, the interesting thing is that Turing-
+completenes is an issue of discussion at all. There seems to be a popular
 conception that Turing-completeness makes a programming language, and since we
-have seen that many DSLs are not Turing-complete, it seems reasonable to believe
-that programmers in general may be more wary of DSLs than they would be of
-general purpose languages.
+have seen that many DSLs are not Turing-complete, it seems reasonable to
+believe that programmers in general may be more wary of DSLs than they would be
+of general purpose languages.
 
 This could lead to the same kind of discrimination described in Yang and
 Rabkin's article, where engineers are kept "outside" the loop based on their
@@ -328,8 +328,8 @@ familiarity with certain DSLs. It may, however, have the opposite affect: those
 who are prejudiced against DSLs may be unwilling to take a job in which they
 would be working with DSLs. This obviously presents problems for the hiring
 managers at such companies, but we propose that it might be a blessing in
-disguise, as people wont to judge on the basis of language are self-selected out
-of opportunities, and those with more open minds take their place.
+disguise, as people wont to judge on the basis of language are self-selected
+out of opportunities, and those with more open minds take their place.
 
 Unfortunately, this way of thinking presumes that there are plenty of DSLs to
 begin with. Mitigating this effect may be the fact that those who are in a
