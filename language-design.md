@@ -311,7 +311,7 @@ above discuss Turing completeness. For example,
 
 > Apparently, HTML5+CSS3 is turing complete too.
 
-What's interesting here is not whether these langauges are Turing-complete, or
+What's interesting here is not whether these languages are Turing-complete, or
 if they are, well, languages. Rather, the interesting thing is that Turing-
 completenes is an issue of discussion at all. There seems to be a popular
 conception that Turing-completeness makes a programming language, and since we
