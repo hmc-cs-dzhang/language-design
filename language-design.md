@@ -248,13 +248,36 @@ What does the post on grayscale tell us about the process of API design?
 
 **Response**
 
-Example of open source/collaborating with users "If it's hard to find good names
-go back to the drawing board" -- is CSS a bad language??? Sometimes every
-alternative will have drawbacks You can't please everyone ... displease everyone
-equally Expect API design mistakes, see article Principle of least astonishment
-(see comments) Readability is an important consideration for names Would a small
-change in program behavior require a lot of name changes in the code?
-(extensibility/evolvability)
+First of all, the post on grayscale shows the value of collaborating with users
+to design an API.  One of Bloch's maxims was that "API design is not a
+solitary activity," and the authors demonstrated this importance.  The
+article first listed what seemed like an extensive list of pros and cons for the
+function names.  Other people then commented with additional suggestions that
+the authors perhaps hadn't considered.  For example, one of the comments
+suggested avoiding `black(lightness [, alpha])` because it involved a
+"subtractive model of printing".  This commenter provided valuable no insight on
+an issue that was not previously mentioned in the article.
+
+Secondly, the article shows the different factors that coders consider when
+choosing a function's name.  First of all, coders should obey the Principle of
+Least Astonishment.  One of Bloch's maxims says that "Every method should do the
+least surprising thing it could, given its name" [Bloch, 2006].  The writers of
+the API are going at great length to provide the least astonishing name for
+their function by polling users to gauge their intuition.  They also considered
+whether small changes in behavior would require extensive changes in the code. 
+This provided encouragement for `rgb(x)`, since if you later wanted to change
+the color away from gray, you would only have to change the arguments rather
+than the function name.  Furthermore, readibility was a big concern for
+naming the grayscaling function.  Although `rgb(x)` may have its benefits, it
+is much less readable than, for example, `gray(x)`.  The pro/con lists and
+comments showed the relative importance of these issues when designing and API.
+
+Lastly, this article shows, as Bloch writes, "You can't please everyone so aim
+to displease everyone equally" [Bloch, 2006].  The comments show that many users
+had strong opinions about how to name the grayscaling function.  Therefore, many
+programmers will be unhappy no matter what name they choose.  It is impossible
+to please everybody in this instance, so the best the authors can do is to
+displease as few people as possible.
 
 ---
 
