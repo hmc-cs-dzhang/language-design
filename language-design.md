@@ -48,6 +48,7 @@ not intended for people with prior CS experience.  However, once a student has
 learned how to code, he or she will grow tired of the wordiness needed for
 natural language.
 
+2. From the article by Yang and Rabkin:
 
 > "While those on the outside are still struggling to prove themselves, the
 > technically privileged have gone ahead to determine what the software that
@@ -55,10 +56,11 @@ natural language.
 > [Yang and Rabkin, 2015].
 
 Having spent the summer working in an office of 300 engineers, the overwhelming
-majority of whom were male, this quote struck me as being particularly accurate.
-Sadly, it epitomizes the current state of the tech industry as a place
-bifurcated into groups of "insiders" and "outsiders", one in which ability and
-potential have little to do with which group one finds themselves in.
+majority of whom were male, this quote struck me as being particularly
+accurate. Sadly, it epitomizes the current state of the tech industry as a
+place bifurcated into groups of "insiders" and "outsiders", one in which
+ability and potential have little to do with which group one finds themselves
+in.
 
 A particularly interesting point of the article, which we believe is
 encapsulated in this quote, is the ambiguous direction of causality when it
@@ -71,6 +73,8 @@ languages, which inform their prejudices about those who use the languages.
 They then utilize the language prejudice to keep the outsiders out and
 themselves in. Breaking this cycle of privilege will require a dramatic
 cultural shift.
+
+3. From the abstract by Bloch:
 
 > "You can't please everyone, so aim to displease everyone equally" [Bloch,
 2006]
@@ -118,15 +122,15 @@ users as they grow.
 All of the more specific language characteristics mentioned by Steele are in
 service of this goal -- to allow growth. To name a few, a language set up to
 grow should have generic types (Steele 10), operator overloading (10), and
-(perhaps most importantly) the ability to add new words to the vocabulary of the
-language in such a way that the new words look and act like primitive words (6).
-By way of example, languages as diverse as Haskell, Lisp, and C++ satisfy these
-criteria.
+(perhaps most importantly) the ability to add new words to the vocabulary of
+the language in such a way that the new words look and act like primitive words
+(6). By way of example, languages as diverse as Haskell, Lisp, and C++ satisfy
+these criteria.
 
 While Steele gives us one useful criterion for evaluating languages, we can see
 a slightly different approach in Joshua Bloch's "How to Design a Good API and
-Why it Matters". (Note that while Bloch's talk pertains specifically to APIs, we
-have seen that APIs and languages share many traits, such as vocabulary and
+Why it Matters". (Note that while Bloch's talk pertains specifically to APIs,
+we have seen that APIs and languages share many traits, such as vocabulary and
 fluency, so it stands to reason that many of the things that make an API good
 might also make a language good). Bloch gives us many tips for how to make an
 API that is user-friendly, not just in terms of growth, but also as it exists
@@ -143,9 +147,9 @@ is any language that is not good, as we now have a good idea of what makes a
 language good. To end with an example, we agree with Tim Smith that R is a bad
 language, evidenced by the content and tone of Smith's "aRrgh: a newcomer’s
 (angry) guide to R". R violates the principle of least astonishment in many
-ways. Take, for example, the dot operator -- in fact, this is not an operator at
-all, but simply a valid character to include in a variable name, which makes for
-very astonishing names. As Bloch says, "names matter" (Bloch 506). Another
+ways. Take, for example, the dot operator -- in fact, this is not an operator
+at all, but simply a valid character to include in a variable name, which makes
+for very astonishing names. As Bloch says, "names matter" (Bloch 506). Another
 unfortunate trait of R, one not yet mentioned here, is its tendency to fail
 silently or late. A good language should "fail fast" (506), and R definitely
 does not.
@@ -209,15 +213,16 @@ In what way is an API a language?
 **Response**
 
 In class, we talked about the specturm of DSL-ness, which included, in order
-from least to most "DSL-y", libraries, APIs, and DSLs. Just from that, it should
-be clear that the distinction between APIs and languages is fuzzy -- that's the
-whole point of a spectrum.
+from least to most "DSL-y", libraries, APIs, and DSLs. Just from that, it
+should be clear that the distinction between APIs and languages is fuzzy --
+that's the whole point of a spectrum.
 
-This fuzziness is also evident in the similarities between the definitions of an
-API and a language. In particular, we defined a language as having fluency
+This fuzziness is also evident in the similarities between the definitions of
+an API and a language. In particular, we defined a language as having fluency
 (vocabulary and grammar) and semantics. An API certainly has semantics. It also
-has some sense of fluency -- per Bloch, "if you get an API right, code will read
-like prose" (Bloch 506).
+has some sense of fluency -- per Bloch, "if you get an API right, code will
+read like prose" (Bloch 506). This is what distinguishes an API from a library,
+and pushes it towards DSL on the spectrum.
 
 As we alluded to in an earlier response, a similiarity between APIs and
 languages is what makes one good. We can get a sense of the similarities by
@@ -230,17 +235,17 @@ things later, but you can’t take them away" (Bloch 506).
 As another example, a good language, like a good API, should be a collaborative
 endeavor. Steele describes the bazaar/cathedral metaphor, and suggests that a
 language should be built like a bazaar -- the many users of the language all
-play a small part in building the final product -- since "it is fine to come
-up with good thoughts, but much better to know them when you see them in the
-work of other persons" (Steele 8). Bloch seems to agree, writing
+play a small part in building the final product -- since "it is fine to come up
+with good thoughts, but much better to know them when you see them in the work
+of other persons" (Steele 8). Bloch seems to agree, writing
 
 > API design is not a solitary activity. Show your design to as many people as
 > you can, and take their feedback seriously. Possibilities that elude your
 > imagination may be clear to others (Bloch 506).
 
 To summarize, languages and APIs are adjacent on the DSL spectrum, and they
-share similar definitions. Thus it is no surprise that good API is in many ways
-similar to a good language.
+share similar definitions. Thus it is no surprise that a good API is in many
+ways similar to a good language.
 
 ---
 
@@ -310,12 +315,12 @@ above discuss Turing completeness. For example,
 > Apparently, HTML5+CSS3 is turing complete too.
 
 What's interesting here is not whether these langauges are Turing-complete, or
-if they are, well, languages. Rather, the interesting thing is that
-Turing-completenes is an issue of discussion at all. There seems to be a popular
+if they are, well, languages. Rather, the interesting thing is that Turing-
+completenes is an issue of discussion at all. There seems to be a popular
 conception that Turing-completeness makes a programming language, and since we
-have seen that many DSLs are not Turing-complete, it seems reasonable to believe
-that programmers in general may be more wary of DSLs than they would be of
-general purpose languages.
+have seen that many DSLs are not Turing-complete, it seems reasonable to
+believe that programmers in general may be more wary of DSLs than they would be
+of general purpose languages.
 
 This could lead to the same kind of discrimination described in Yang and
 Rabkin's article, where engineers are kept "outside" the loop based on their
@@ -323,8 +328,8 @@ familiarity with certain DSLs. It may, however, have the opposite affect: those
 who are prejudiced against DSLs may be unwilling to take a job in which they
 would be working with DSLs. This obviously presents problems for the hiring
 managers at such companies, but we propose that it might be a blessing in
-disguise, as people wont to judge on the basis of language are self-selected out
-of opportunities, and those with more open minds take their place.
+disguise, as people wont to judge on the basis of language are self-selected
+out of opportunities, and those with more open minds take their place.
 
 Unfortunately, this way of thinking presumes that there are plenty of DSLs to
 begin with. Mitigating this effect may be the fact that those who are in a
