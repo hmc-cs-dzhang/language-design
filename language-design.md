@@ -165,11 +165,11 @@ consistent--each method took in a Sound (self) along with other parameters and
 returned a new Sound.  This way, the user could easily compose functions using
 calls like `mySound.reverse().overlay(otherSound)`.
 
-In addition, _Growing a Language_ showed the importance of keeping a keeping an
-API as contained as possible, and only including options that would be relevant
-to many users.  On pages 10 and 11, Steele showed many cases of data types, each
+In addition, _Growing a Language_ showed the importance of keeping an API as 
+contained as possible, and only including options that would be relevant to 
+many users.  On pages 10 and 11, Steele showed many cases of data types, each
 increasingly obscure.  After describing them, Steele asked "So should we make
-'x' a type in the Java programming language?"  In the ends, he concludes that
+'x' a type in the Java programming language?"  In the end, he concludes that
 language designers should not include these rare features because "It would not
 be fair to weigh down all programmers with the need to have or to learn all the
 words for all niche uses" (Steele, 12).  This idea ties with the theme of making
@@ -178,7 +178,7 @@ We tried to respect this mentality when designing our API for the sound lab.
 All of the methods should perform a single task, which allows users to combine
 functions effectively.  We tried to keep the methods as segmented as possible,
 including options like "play", "overlay," "reverse," and "change speed".  We did
-not, for example, add a method that would both divide overlay two sounds and
+not, for example, add a method that would both overlay two sounds and
 reverse them, as this would not have been useful for most users.
 
 Another point that _Growing a Language_ emphasized was that users should be able
@@ -188,16 +188,14 @@ According to Steele,
 > I think has all but killed it: there was no way for a user to grow the
 > language in a smooth way (Steele, 6)
 
-This is a very interesting and useful idea that we did not consider when
-desigining our Sound API.  Our design involved creating a Sound class with two
-data members, the sound samples and the sampling rate.  Our goal was to keep
-these data members private and only expose users to the class's methods.  
-(Bloch includes this idea in his maxim "Minimize accessibility; when in doubt,
-make it private").  With this design, however, a user would not be able to
-extend the Sound class.  They compose the sound methods that we defined, but
-they would have no way of creating a primitive method that looked like one from
-the API.  As Steele shows, this rigidness could dissuade programmers from
-using our API, and suggests that we should have used a different approach.
+This is a salient point that we failed to consider when desigining our Sound 
+API.  Our design involved creating a Sound class with two data members, the 
+sound samples and the sampling rate.  Our goal was to keep these data members 
+private and only expose users to the class's methods.  (Bloch includes this 
+idea in his maxim "Minimize accessibility; when in doubt, make it private").  
+With this design, however, a user would not be able to extend the Sound 
+class.  They could compose the sound methods that we defined, but they would have no way of creating a primitive method that looked like one from the API.  As Steele shows, this rigidness could dissuade programmers from using our API, 
+and suggests that we should have used a different approach.
 ---
  
 **Question**
