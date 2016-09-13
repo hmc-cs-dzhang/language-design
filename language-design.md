@@ -19,7 +19,11 @@ For each quote, describe what it was about the quote that led you pick it.
 
 1. From the article by Pavlus:
 
->"According to findings by researchers from Southern Illinois University, this reaction isn’t just because you’re a n00b: they found that Perl, a major programming language used by untold zillions of developers, is no more intuitive to novices than a language with a randomly generated syntax." [Pavlus, 2012].
+>"According to findings by researchers from Southern Illinois University, this
+>reaction isn’t just because you’re a n00b: they found that Perl, a major
+>programming language used by untold zillions of developers, is no more
+>intuitive to novices than a language with a randomly generated syntax."
+>[Pavlus, 2012].
 
 We selected this quote as an example of something we disagree with.  Most
 notably, the quote contradicts itself.  The quote first says that if you
