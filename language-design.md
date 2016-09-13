@@ -33,17 +33,17 @@ before.  This quote does not support their point that experienced coders
 struggle with syntax.
 
 We also disagree with the sentiment that programmers should employ syntax
-more intuitive to "novices".  Sure, using natural language could look more
+more intuitive to novices.  Sure, using natural language could look more
 understandable for someone who has never coded before.  However, for
 more experienced coders, using natural language could feel ambiguous and
 cumbersome.  Frequent users of code would appreciate a small syntax
-that they could build off of a concise set of keywords.  Also, I think
+that they could build off of a concise set of keywords.  Also, we think
 it is more important to cater to experienced coders than the "n00bs" in the
 study because they were only novices for an hour.  Typically, people spend
 more time as experienced coders who understand the syntax than as beginners
 trying to read off code like a natural language.  There is certainly
 niche for langauges that resemble natural communication, for example a
-stepping stone to teach novices computer science or a domain-specific language
+stepping stone to teach beginners computer science or a domain-specific language
 not intended for people with prior CS experience.  However, once a student has
 learned how to code, he or she will grow tired of the wordiness needed for
 natural language.
@@ -87,8 +87,8 @@ contracts.  This quote reminds us that while you should strive to make
 your code as clear as possible, it is not realistic to please everybody.
 
 This issue was evident in the source article about grayscale [Verou, 2014]. 
-All of the proposed names for the "graying" functions had their own drawbacks. 
-Commenters proposed  several well-thought arguments for all four options.
+All of the proposed names for the "graying" functions had their own drawbacks,
+and commenters proposed  several well-thought arguments for all four options.
 This example shows that the designers could not please everybody, so they
 were attempting to choose the least surprising answer by polling users.
 
@@ -161,12 +161,12 @@ How do the themes of _Growing a Language_ relate to the "sound lab" we did this 
 Our main takeaway from _Growing a Language_ was that a good language should
 provide users with a small and useful set of building blocks.  From there, the
 progammer should be able to compose the available tools to suit their needs. We
-tried to use this mentatility when adapting the Sound
-library to a more usable API.  First, we created a "Sound" class which
-contained all of the methods for editing sounds.  We tried to be
-consistent--each method took in a Sound (self) along with other parameters and
-returned a new Sound.  This way, the user could easily compose functions using
-calls like `mySound.reverse().overlay(otherSound)`.
+tried to use this mentatility when adapting the Sound library to a more usable
+API.  First, we created a "Sound" class which contained all of the methods for
+editing sounds.  We tried to be consistent--each method took in a Sound (self)
+along with other parameters and returned a new Sound.  This way, the user could
+easily compose methods using calls like
+`mySound.reverse().overlay(otherSound)`.
 
 In addition, _Growing a Language_ showed the importance of keeping an API as 
 contained as possible, and only including options that would be relevant to 
@@ -178,7 +178,7 @@ be fair to weigh down all programmers with the need to have or to learn all the
 words for all niche uses" (Steele, 12).  This idea ties with the theme of making
 a language/API exactly as small as it should be, and no smaller [Bloch, 2006]. 
 We tried to follow this maxim when designing our API for the sound lab. 
-All of the methods performed a single task, which allows users to combine
+All of the methods performed a single task, which allowed users to combine
 functions effectively.  We tried to keep the methods as segmented as possible,
 including options like "play", "overlay," "reverse," and "change speed".  We did
 not, for example, add a method that would both overlay two sounds and
