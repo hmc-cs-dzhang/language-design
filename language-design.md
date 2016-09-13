@@ -213,15 +213,16 @@ In what way is an API a language?
 **Response**
 
 In class, we talked about the specturm of DSL-ness, which included, in order
-from least to most "DSL-y", libraries, APIs, and DSLs. Just from that, it should
-be clear that the distinction between APIs and languages is fuzzy -- that's the
-whole point of a spectrum.
+from least to most "DSL-y", libraries, APIs, and DSLs. Just from that, it
+should be clear that the distinction between APIs and languages is fuzzy --
+that's the whole point of a spectrum.
 
-This fuzziness is also evident in the similarities between the definitions of an
-API and a language. In particular, we defined a language as having fluency
+This fuzziness is also evident in the similarities between the definitions of
+an API and a language. In particular, we defined a language as having fluency
 (vocabulary and grammar) and semantics. An API certainly has semantics. It also
-has some sense of fluency -- per Bloch, "if you get an API right, code will read
-like prose" (Bloch 506).
+has some sense of fluency -- per Bloch, "if you get an API right, code will
+read like prose" (Bloch 506). This is what distinguishes an API from a library,
+and pushes it towards DSL on the spectrum.
 
 As we alluded to in an earlier response, a similiarity between APIs and
 languages is what makes one good. We can get a sense of the similarities by
@@ -234,17 +235,17 @@ things later, but you can’t take them away" (Bloch 506).
 As another example, a good language, like a good API, should be a collaborative
 endeavor. Steele describes the bazaar/cathedral metaphor, and suggests that a
 language should be built like a bazaar -- the many users of the language all
-play a small part in building the final product -- since "it is fine to come
-up with good thoughts, but much better to know them when you see them in the
-work of other persons" (Steele 8). Bloch seems to agree, writing
+play a small part in building the final product -- since "it is fine to come up
+with good thoughts, but much better to know them when you see them in the work
+of other persons" (Steele 8). Bloch seems to agree, writing
 
 > API design is not a solitary activity. Show your design to as many people as
 > you can, and take their feedback seriously. Possibilities that elude your
 > imagination may be clear to others (Bloch 506).
 
 To summarize, languages and APIs are adjacent on the DSL spectrum, and they
-share similar definitions. Thus it is no surprise that good API is in many ways
-similar to a good language.
+share similar definitions. Thus it is no surprise that a good API is in many
+ways similar to a good language.
 
 ---
 
