@@ -122,15 +122,15 @@ users as they grow.
 All of the more specific language characteristics mentioned by Steele are in
 service of this goal -- to allow growth. To name a few, a language set up to
 grow should have generic types (Steele 10), operator overloading (10), and
-(perhaps most importantly) the ability to add new words to the vocabulary of the
-language in such a way that the new words look and act like primitive words (6).
-By way of example, languages as diverse as Haskell, Lisp, and C++ satisfy these
-criteria.
+(perhaps most importantly) the ability to add new words to the vocabulary of
+the language in such a way that the new words look and act like primitive words
+(6). By way of example, languages as diverse as Haskell, Lisp, and C++ satisfy
+these criteria.
 
 While Steele gives us one useful criterion for evaluating languages, we can see
 a slightly different approach in Joshua Bloch's "How to Design a Good API and
-Why it Matters". (Note that while Bloch's talk pertains specifically to APIs, we
-have seen that APIs and languages share many traits, such as vocabulary and
+Why it Matters". (Note that while Bloch's talk pertains specifically to APIs,
+we have seen that APIs and languages share many traits, such as vocabulary and
 fluency, so it stands to reason that many of the things that make an API good
 might also make a language good). Bloch gives us many tips for how to make an
 API that is user-friendly, not just in terms of growth, but also as it exists
@@ -147,9 +147,9 @@ is any language that is not good, as we now have a good idea of what makes a
 language good. To end with an example, we agree with Tim Smith that R is a bad
 language, evidenced by the content and tone of Smith's "aRrgh: a newcomer’s
 (angry) guide to R". R violates the principle of least astonishment in many
-ways. Take, for example, the dot operator -- in fact, this is not an operator at
-all, but simply a valid character to include in a variable name, which makes for
-very astonishing names. As Bloch says, "names matter" (Bloch 506). Another
+ways. Take, for example, the dot operator -- in fact, this is not an operator
+at all, but simply a valid character to include in a variable name, which makes
+for very astonishing names. As Bloch says, "names matter" (Bloch 506). Another
 unfortunate trait of R, one not yet mentioned here, is its tendency to fail
 silently or late. A good language should "fail fast" (506), and R definitely
 does not.
