@@ -47,10 +47,28 @@ teaching purposes.  However, once a student has learned how to code, he/she
 will probably grow tired of writing less concise code.
 
 
-"While those on the outside are still... (Yang and Rabkin)"
-	Cycle of privilidge.
-	Encapsulates the state of tech.
-	Language bias is a symptom of this stratification
+> "While those on the outside are still struggling to prove themselves, the
+> technically privileged have gone ahead to determine what the software that
+> runs our lives should look like."
+> [Yang and Rabkin, 2015].
+
+Having spent the summer working in an office of 300 engineers, the overwhelming
+majority of whom were male, this quote struck me as being particularly accurate.
+Sadly, it epitomizes the current state of the tech industry as a place
+bifurcated into groups of "insiders" and "outsiders", one in which ability and
+potential have little to do with which group one finds themselves in.
+
+A particularly interesting point of the article, which we believe is
+encapsulated in this quote, is the ambiguous direction of causality when it
+comes to language-based discrimination. Do so-called "Real Programmers" look
+down on Javascript or HTML users because of prejudice against those languages?
+Or have industry insiders cultivated the language-based stereotypes as a means
+to discriminate against those who tend to use the languages? We believe the
+causality flows both ways. Those on the inside have certain prejudices about
+languages, which inform their prejudices about those who use the languages.
+They then utilize the language prejudice to keep the outsiders out and
+themselves in. Breaking this cycle of privilege will require a dramatic
+cultural shift.
 
 "You can't please everyone, so aim to displease everyone equally"
 	In the real world there is not always a perfect solution like in CS5
