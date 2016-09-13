@@ -127,18 +127,49 @@ How do the themes of _Growing a Language_ relate to the "sound lab" we did this 
 
 **Response**
 
-We made it easier to compose things, and create complicated sounds out of the
-building blocks.  Made it easier for the user to do complex things. All the
-functions were simple, basic, primitive building blocks.  Then the user could do
-what they wanted.  Made connections easier.  Better room for growth by making
-connections more intuitive Connect to building blocks We didn't add to the rules
-of the sound lab.  We just modified the existing ones. We didn't include complex
-functions that would only be useful to a select few. Not possible for users to
-add to the API and make it look like a primitive. (pg 6)  Cannot extend the
-sound class. (Keep APIs free of implementation details).
+My main takeaway from _Growing a Language_ was that a good language should
+provide users with a small and useful set of building blocks.  From there, the
+progammer should be able to compose the available tools to suit their
+specific need. We tried to use this same mentatility when adapting the Sound
+library to be a more usable API.  First, we created a "Sound" class which
+contained all of the methods for editing sounds.  We tried to be
+consistent--each method took in a Sound (self) along with other parameters and
+returned a new Sound.  This way, the user could easily compose functions using
+calls like `mySound.reverse().overlay(otherSound)`.
 
+In addition, _Growing a Language_ showed the importance of keeping a keeping an
+API as contained as possible, and only including options that would be relevant
+to many users.  On pages 10 and 11, Steele showed many cases of data types, each
+increasingly obscure.  After describing them, Steele asked "So should we make
+'x' a type in the Java programming language?"  In the ends, he concludes that
+language designers should not include these rare features because "It would not
+be fair to weigh down all programmers with the need to have or to learn all the
+words for all niche uses" (Steele, 12).  This idea ties with the theme of making
+a language/API exactly as small as it should be, and no smaller [Bloch, 2006]. 
+We tried to respect this mentality when designing our API for the sound lab. 
+All of the methods should perform a single task, which allows users to combine
+functions effectively.  We tried to keep the methods as segmented as possible,
+including options like "play", "overlay," "reverse," and "change speed".  We did
+not, for example, add a method that would both divide overlay two sounds and
+reverse them, as this would not have been useful for most users.
 
+Another point that _Growing a Language_ emphasized was that users should be able
+to make their own functions that look like primitives of the language. 
+According to Steele, 
+> APL was designed by one man, a smart man—and I love APL—but it had a flaw that
+> I think has all but killed it: there was no way for a user to grow the
+> language in a smooth way (Steele, 6)
 
+This is a very interesting and useful idea that we did not consider when
+desigining our Sound API.  Our design involved creating a Sound class with two
+data members, the sound samples and the sampling rate.  Our goal was to keep
+these data members private and only expose users to the class's methods.  
+(Bloch includes this idea in his maxim "Minimize accessibility; when in doubt,
+make it private").  With this design, however, a user would not be able to
+extend the Sound class.  They compose the sound methods that we defined, but
+they would have no way of creating a primitive method that looked like one from
+the API.  As Steele shows, this rigidness could dissuade programmers from
+using our API, and suggests that we should have used a different approach.
 ---
  
 **Question**
