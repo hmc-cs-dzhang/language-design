@@ -56,10 +56,11 @@ natural language.
 > [Yang and Rabkin, 2015].
 
 Having spent the summer working in an office of 300 engineers, the overwhelming
-majority of whom were male, this quote struck me as being particularly accurate.
-Sadly, it epitomizes the current state of the tech industry as a place
-bifurcated into groups of "insiders" and "outsiders", one in which ability and
-potential have little to do with which group one finds themselves in.
+majority of whom were male, this quote struck me as being particularly
+accurate. Sadly, it epitomizes the current state of the tech industry as a
+place bifurcated into groups of "insiders" and "outsiders", one in which
+ability and potential have little to do with which group one finds themselves
+in.
 
 A particularly interesting point of the article, which we believe is
 encapsulated in this quote, is the ambiguous direction of causality when it
