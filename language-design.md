@@ -32,21 +32,20 @@ they go on to reference a studying that tested people who have never coded
 before.  This quote does not support their point that experienced coders
 struggle with syntax.
 
-We also disagree with the sentiment that programmers should employ syntax
-more intuitive to novices.  Sure, using natural language could look more
-understandable for someone who has never coded before.  However, for
-more experienced coders, using natural language could feel ambiguous and
-cumbersome.  Frequent users of code would appreciate a small syntax
-that they could build off of a concise set of keywords.  Also, we think
-it is more important to cater to experienced coders than the "n00bs" in the
-study because they were only novices for an hour.  Typically, people spend
-more time as experienced coders who understand the syntax than as beginners
-trying to read off code like a natural language.  There is certainly
-niche for langauges that resemble natural communication, for example a
-stepping stone to teach beginners computer science or a domain-specific language
-not intended for people with prior CS experience.  However, once a student has
-learned how to code, he or she will grow tired of the wordiness needed for
-natural language.
+We also disagree with the sentiment that programmers should employ syntax more
+intuitive to novices.  Sure, using natural language could look more
+understandable for someone who has never coded before.  However, for more
+experienced coders, using natural language could feel ambiguous and cumbersome.
+Frequent users of code would appreciate a concise set of keywords that they
+could build off of.  Also, we think it is more important to cater to experienced
+coders than the "n00bs" in the study because they were only novices for an hour.
+Typically, people spend more time as experienced coders who understand the
+syntax than as beginners trying to read off code like a natural language.  There
+is certainly a niche for languages that resemble natural communication, for
+example a stepping stone to teach beginners computer science or a domain-
+specific language not intended for people with prior CS experience.  However,
+once a student has learned how to code, he or she will grow tired of the
+wordiness needed for natural language.
 
 2. From the article by Yang and Rabkin:
 
@@ -80,7 +79,7 @@ cultural shift.
 2006]
 
 We chose this quote because it is an undesirable, yet important part of
-designing a language or an API.  In CS 5 and CS 60, all of our homework
+designing a language or an API.  In our intro CS classes, all of our homework
 assignments were very small and self-contained, and they often had "perfect"
 solutions.  However, when we transitioned to working with a much larger
 code-base
@@ -169,15 +168,14 @@ tried to use this mentatility when adapting the Sound library to a more usable
 API.  First, we created a "Sound" class which contained all of the methods for
 editing sounds.  We tried to be consistent--each method took in a Sound (self)
 along with other parameters and returned a new Sound.  This way, the user could
-easily compose methods using calls like
-`mySound.reverse().overlay(otherSound)`.
+easily compose methods using calls like `mySound.reverse().overlay(otherSound)`.
 
 In addition, _Growing a Language_ showed the importance of keeping an API as 
 contained as possible, and only including options that would be relevant to 
-many users.  On pages 10 and 11, Steele showed many cases of data types, each
-increasingly obscure.  After describing them, Steele asked "So should we make
+many users.  On pages 10 and 11, Steele shows many examples of data types, each
+increasingly obscure.  After describing them, Steele asks "So should we make
 'x' a type in the Java programming language?"  In the end, he concludes that
-language designers should not include these rare features because "It would not
+language designers should not add these rare features because "It would not
 be fair to weigh down all programmers with the need to have or to learn all the
 words for all niche uses" (Steele, 12).  This idea ties with the theme of making
 a language/API exactly as small as it should be, and no smaller [Bloch, 2006]. 
@@ -267,16 +265,16 @@ an issue that was not previously mentioned in the article.
 
 Secondly, the article shows the different factors that coders consider when
 choosing a function's name.  First of all, coders should obey the Principle of
-Least Astonishment: "Every method should do the least surprising thing it 
-could, given its name" [Bloch, 2006].  The writers of the API went at great
-lengths to provide the least astonishing name for their function by polling 
+Least Astonishment: "Every method should do the least surprising thing it
+could, given its name" [Bloch, 2006].  The writers of the API went to great
+lengths to provide the least astonishing name for their function by polling
 users to gauge their intuition.  They also considered whether small changes in
-behavior would require extensive changes in the code.
-This provided encouragement for `rgb(x)`, since if you later wanted to change
-the color away from gray, you would only have to change the arguments rather
-than the function name.  Furthermore, readibility was a big concern for
-naming the grayscaling function.  Although `rgb(x)` may have its benefits, it
-is much less readable than, for example, `gray(x)`.
+behavior would require extensive changes in the code. This provided
+encouragement for `rgb(x)`, since if you later wanted to change the color away
+from gray, you would only have to change the arguments rather than the function
+name.  Furthermore, readability was a big concern for naming the grayscaling
+function.  Although `rgb(x)` may have its benefits, it is much less readable
+than, for example, `gray(x)`.
 
 Lastly, this article reveals, as Bloch writes, "You can't please everyone so 
 aim to displease everyone equally" [Bloch, 2006].  The comments show that many
@@ -405,29 +403,30 @@ send
 end tell
 [/applescript]
 ```
+
 This code shows that AppleScript went further than replacing vocabulary and
 syntax--they tried to have the language's grammar mimic natural language.  As
-you can see, Quorum's use of `=` suggests the intent but is clearly a machine
-instruction.  On the other hand, `set x to y` changes the grammar to something
-confusingly close to natural language, raising the issues that Tim Cook found.
+you can see, Quorum's use of `=` suggests the intent but is clearly not English.
+On the other hand, `set x to y` changes the grammar to something confusingly
+close to natural language, raising the issues that Tim Cook found.
 
 Some downsides of AppleScript's approach are that their extensive use of English
 suggest that the language supports other natural language features as well.  For
 example, in English, there are often many different, and equally correct, ways
 of saying the same thing.  However, this quality would not be desirable for a
-programming language: according to the Zen of Python, "there should be one, and
+programming language: according to the Zen of Python, "There should be one, and
 preferably only one obvious way to do it".
 
-For these reasons, we would more closely follow Quorum's model of
-incorporating natural language into the vocabulary but not the grammar.  That
-way, readers could get an idea of what the vocabulary intended, but would not be
-in the mindset of writing ambiguous natural language. In addition, we would
-include only a small set of vocabulary so that the user could easily keep
-track of all the keywords.  Also, we would view concision as an important factor
-for determining a language's vocabulary.  A coder is only a novice for a short
-time, and once they are comfortable with a language's word set then the English
+For these reasons, we would more closely follow Quorum's model of incorporating
+natural language into the vocabulary but not the grammar.  That way, readers
+could get an idea of what the vocabulary intended, but would not be in the
+mindset of writing ambiguous natural language. In addition, we would include
+only a small set of vocabulary so that the user could easily keep track of all
+the keywords.  Also, we would view concision as an important factor for
+determining a language's vocabulary.  A coder is only a novice for a short time,
+and once they are comfortable with a language's word set then the English
 meaning is less important.  The word `REPEAT` might be slightly more evocative
-than the word `for` but after a few minutes, they would be synonymous. 
+than the word `for` but after a few minutes, they would be synonymous.
 Moreover, if I were writing thousands of lines of code, I would rather type
 `for` to save the time and space.  In conclusion, a limited use of natural
 language certainly has its value in creating readable code, but too much natural
