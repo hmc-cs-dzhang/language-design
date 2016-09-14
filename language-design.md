@@ -27,7 +27,7 @@ For each quote, describe what it was about the quote that led you pick it.
 
 We selected this quote as an example of something we disagree with.  Most
 notably, the quote contradicts itself.  The quote first says that if you
-have trouble intuiting code then it's not becuase you're a n00b.  However,
+have trouble intuiting code then it's not because you're a n00b.  However,
 they go on to reference a studying that tested people who have never coded
 before.  This quote does not support their point that experienced coders
 struggle with syntax.
@@ -162,8 +162,8 @@ How do the themes of _Growing a Language_ relate to the "sound lab" we did this 
 
 Our main takeaway from _Growing a Language_ was that a good language should
 provide users with a small and useful set of building blocks.  From there, the
-progammer should be able to compose the available tools to suit their needs. We
-tried to use this mentatility when adapting the Sound library to a more usable
+programmer should be able to compose the available tools to suit their needs. We
+tried to use this mentality when adapting the Sound library to a more usable
 API.  First, we created a "Sound" class which contained all of the methods for
 editing sounds.  We tried to be consistent--each method took in a Sound (self)
 along with other parameters and returned a new Sound.  This way, the user could
@@ -192,7 +192,7 @@ According to Steele,
 > I think has all but killed it: there was no way for a user to grow the
 > language in a smooth way (Steele, 6)
 
-In retrospect, we failed to consider this point when desigining our Sound 
+In retrospect, we failed to consider this point when designing our Sound 
 API.  Our design involved creating a Sound class with two data members, the 
 sound samples and the sampling rate.  Our goal was to keep these data members 
 private and only expose users to the class's methods.  (Bloch includes this 
@@ -209,7 +209,7 @@ In what way is an API a language?
 
 **Response**
 
-In class, we talked about the specturm of DSL-ness, which included, in order
+In class, we talked about the spectrum of DSL-ness, which included, in order
 from least to most "DSL-y", libraries, APIs, and DSLs. Just from that, it
 should be clear that the distinction between APIs and languages is fuzzy --
 that's the whole point of a spectrum.
@@ -221,7 +221,7 @@ has some sense of fluency -- per Bloch, "if you get an API right, code will
 read like prose" (Bloch 506). This is what distinguishes an API from a library,
 and pushes it towards DSL on the spectrum.
 
-As we alluded to in an earlier response, a similiarity between APIs and
+As we alluded to in an earlier response, a similarity between APIs and
 languages is what makes one good. We can get a sense of the similarities by
 comparing Steele's traits of a good language with Bloch's traits of a good API.
 For example, Steele makes a big point of how "a main goal in designing a
@@ -298,7 +298,7 @@ clearly a general purpose language, there are DSLs involved in web development
 that also contribute to the stereotypes. For example, HTML fits our definition
 of a DSL, and more generally a programming language. It has syntax and
 semantics, and it allows small building blocks to be chained and composed in
-ways that add to the expressiveness of the language. However, the internet is
+ways that add to the expressiveness of the language. However, the Internet is
 rife with articles claiming that HTML is not a programming language. For an
 example, see the top answer [here](http://stackoverflow.com/questions/145176/is-html-considered-a-programming-language).
 
@@ -311,13 +311,10 @@ above discuss Turing completeness. For example,
 
 > Apparently, HTML5+CSS3 is turing complete too.
 
-<<<<<<< HEAD
-What's interesting here is not whether these langauges are Turing-complete, or
-=======
+
 What's interesting here is not whether these languages are Turing-complete, or
->>>>>>> e8c132f8e912aa48450a27502409435f93b2bb3f
 if they are, well, languages. Rather, the interesting thing is that Turing-
-completenes is an issue of discussion at all. There seems to be a popular
+completeness is an issue of discussion at all. There seems to be a popular
 conception that Turing-completeness makes a programming language, and since we
 have seen that many DSLs are not Turing-complete, it seems reasonable to
 believe that programmers in general may be more wary of DSLs than they would be
@@ -369,7 +366,7 @@ you do so? If not, why not?
 **Response**
 
 For the most part, these two experiences of natural languages are not at odds
-with each other.  We interpereted "natural-language replacements for some of
+with each other.  We interpreted "natural-language replacements for some of
 the more abstruse syntax" to refer more to the vocabulary of a language (for
 example, using `REPEAT` instead of `FOR`).  The grammar would still be intact,
 and the readers would still easily recognize the text as a programming language.
@@ -457,8 +454,5 @@ We divided up the questions as follows:
 
 We then read over the answers to the questions together to make sure we agreed
 on everything.
-<<<<<<< HEAD
-=======
 
->>>>>>> e8c132f8e912aa48450a27502409435f93b2bb3f
 ---
